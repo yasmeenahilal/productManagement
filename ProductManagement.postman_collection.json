@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "36b987af-0663-4291-a1a3-dd073c2a2740",
+		"name": "ProductManagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30077816"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"product_title\": \"Samsung GT 10 Pro\",\n  \"product_description\": \"Latest  Phone\",\n  \"product_price\": 1500.99\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8001/api/products/"
+			},
+			"response": []
+		},
+		{
+			"name": "ListALLProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"product_title\": \"I phone 15\",\n  \"product_description\": \"latest IPhone\",\n  \"product_price\": 1299.99\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8001/api/products/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"product_title\": \"Iphone 16\",\n    \"product_description\": \"About to launch\",\n    \"product_price\": \"1550.99\",\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8001/api/products/3/"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"product_title\": \"notebook\",\n        \"product_description\": \"High Quality\",\n        \"product_price\": \"59.99\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8001/api/products/1/"
+			},
+			"response": []
+		},
+		{
+			"name": "Trace",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"product_title\": \"notebook\",\n        \"product_description\": \"High Quality\",\n        \"product_price\": \"59.99\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8001/api/products/top-products/all/"
+			},
+			"response": []
+		}
+	]
+}
